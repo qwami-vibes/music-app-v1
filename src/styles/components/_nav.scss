@@ -1,0 +1,34 @@
+.nav {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  button {
+    padding: 1rem;
+    border: 0;
+    background-color: #333;
+    color: #e1e1e1;
+    @include flexeven;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    font: 1.9rem "KoHo", sans-serif;
+
+    * {
+      transition: all 0.5s ease;
+    }
+
+    &:hover {
+      background-color: #e1e1e1;
+      color: #333;
+
+      * {
+        color: #333;
+      }
+    }
+  }
+}

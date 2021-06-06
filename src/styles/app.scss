@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "KoHo", sans-serif;
+  color: #e1e1e1;
+  background-color: rgb(37, 37, 37);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: inherit;
+}
+
+h4,
+h5 {
+  font-weight: 400;
+}
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 10% 65% 25%;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  background: transparent;
+
+  &:focus {
+    outline: none;
+  }
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 2rem;
+    height: 1.5rem;
+  }
+}
+
+@import "utils/mixins";
+@import "components/player";
+@import "components/song";
+@import "components/library";
+@import "components/nav";
