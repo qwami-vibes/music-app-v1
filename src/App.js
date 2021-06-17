@@ -3,7 +3,7 @@ import Song from "./components/Song";
 import Player from "./components/Player";
 import Library from "./components/Library";
 import Nav from "./components/Nav";
-import "./styles/app.scss";
+import "./sass/app.scss";
 import data from "./util";
 import { PlayOutline, PauseOutline } from "react-ionicons";
 
